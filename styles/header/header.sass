@@ -1,11 +1,10 @@
-
+@import '../variables/variables'
 
 .header
   &__container
     display: flex
     justify-content: space-between
     align-items: center
-    
 
     &.container
       padding: 32.5px 20px
@@ -14,3 +13,20 @@
   &__burger-button
     background: none
     border: 0
+
+  .companyName
+    display: none
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      &
+        display: block
+        font-weight: 200
+        padding-left: 15px
+
+  .leftGroup
+    display: none
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      &
+        display: flex
+        align-items: center
