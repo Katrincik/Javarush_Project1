@@ -6,11 +6,13 @@
 @import url(gallery/gallery.css)
 @import url(download-now/download-now.css)
 @import url(faq/faq.css)
+@import 'variables/variables'
 
 *
   box-sizing: border-box
   font-family: 'Poppins'
-  
+  color: #202020
+
 body
   margin: 0
   display: block
@@ -19,12 +21,15 @@ body
   width: 100%
   padding: 0 20px
 
-  //@media (max-width: $mobile)
+  @media (min-width: $tablet-min) and (max-width: $tablet-max)
+    &
+      padding: 64px 96px 128px 32px
 
-  //@media (min-width: $tablet-min) and (max-width: $tablet-max)
+  //@media (max-width: $mobile)
 
   //@media (min-width: $desktop)
 
 .three-first-sections
   background: linear-gradient(#F5F5F5, #DDECFF, #F5F5F5)
+
 

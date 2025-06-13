@@ -1,3 +1,15 @@
+@import '../variables/variables'
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max)
+  .departureData, .timeDeparture
+    display: flex
+    gap: 32px
+
+    .departureGroup, .timeGroup
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      flex: 1
 
 .hero-form
   &__label
@@ -36,6 +48,10 @@
   border-radius: 10px
   height: 34px
   padding: 3px 8px
+
+  @media (min-width: $tablet-min) and (max-width: $tablet-max)
+    &
+      padding: 3px 24px
 
   label
     font-size: 12px
@@ -82,6 +98,11 @@
     background-image: url('../../img/calendar.svg')
     background-repeat: no-repeat
     background-position: center
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      &
+        top: 33.5px
+
 
   input
     padding-left: 52px

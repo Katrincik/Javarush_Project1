@@ -1,5 +1,11 @@
+@import '../variables/variables'
+
 .hero
   padding-bottom: 128px
+
+  //@media (min-width: $tablet-min) and (max-width: $tablet-max)
+    &
+      padding: 64px 96px 128px 0px
 
   h1
     font-size: 32px
@@ -7,9 +13,20 @@
     margin-top: 0
     margin-bottom: 0
 
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      &
+        font-size: 64px
+
   p
     font-size: 11px
     font-weight: 400
     color: #202020
     margin-top: 24px
     margin-bottom: 24px
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      &
+        margin-top: 32px
+        margin-bottom: 32px
+        margin-right: 6px
+        font-size: 16px

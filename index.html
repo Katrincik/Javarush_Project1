@@ -42,11 +42,11 @@
 
 			<section class="hero">
 				<div class="container">
-					<h1>Skip the Climbing, Catch the Bus</h1>
+					<h1>Skip The Climbing, Catch The Bus</h1>
 
 					<p>
 						We sell tickets to the best seats in the house – houses on wheels,
-						that is! Get ready for jaw-dropping views without breaking a sweat.
+						that is! <br> Get ready for jaw-dropping views without breaking a sweat.
 					</p>
 
 					<form class="hero-form">
@@ -79,40 +79,52 @@
 							</div>
 						</div>
 
-						<label for="departure" class="hero-form__label">Departure</label>
-						<input
-							id="departure"
-							class="hero-form__input"
-							placeholder="Your City/Station"
-						/>
+						<div class="departureData">
+							<div class="departureGroup">
+								<label for="departure" class="hero-form__label">Departure</label>
+								<input
+									id="departure"
+									class="hero-form__input"
+									placeholder="Your City/Station"
+								/>
+							</div>
 
-						<label for="departure" class="hero-form__label">Arrival</label>
-						<input
-							id="departure"
-							class="hero-form__input"
-							placeholder="Where to?"
-						/>
-
-						<label for="departure" class="hero-form__label"
-							>Pick your lucky day</label
-						>
-
-						<div class="calendar-input-wrapper">
-							<input
-								id="departure"
-								type="date"
-								class="hero-form__input"
-								placeholder="Depart"
-							/>
+							<div class="departureGroup">
+								<label for="departure" class="hero-form__label">Arrival</label>
+								<input
+									id="departure"
+									class="hero-form__input"
+									placeholder="Where to?"
+								/>
+							</div>
 						</div>
 
-						<div class="calendar-input-wrapper">
-							<input
-								id="departure"
-								type="date"
-								class="hero-form__input"
-								placeholder="Return"
-							/>
+						<label for="departure" class="hero-form__label"
+						>Pick your lucky day</label
+						>
+
+						<div class="timeDeparture">
+							<div class="timeGroup">
+								<div class="calendar-input-wrapper">
+									<input
+										id="departure"
+										type="date"
+										class="hero-form__input"
+										placeholder="Depart"
+									/>
+								</div>
+							</div>
+
+							<div class="timeGroup">
+								<div class="calendar-input-wrapper">
+									<input
+										id="departure"
+										type="date"
+										class="hero-form__input"
+										placeholder="Return"
+									/>
+								</div>
+							</div>
 						</div>
 
 						<button class="submit">Find My Alpine Ride</button>

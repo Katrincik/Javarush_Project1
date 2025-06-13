@@ -9,6 +9,10 @@
     &.container
       padding: 32.5px 20px
 
+      @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        &
+          padding: 32.5px 32px
+
 
   &__burger-button
     background: none
@@ -20,8 +24,9 @@
     @media (min-width: $tablet-min) and (max-width: $tablet-max)
       &
         display: block
-        font-weight: 200
+        font-weight: 300
         padding-left: 15px
+        margin: 0
 
   .leftGroup
     display: none

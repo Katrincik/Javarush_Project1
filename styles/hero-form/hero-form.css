@@ -1,3 +1,15 @@
+@media (min-width: 768px) and (max-width: 1199px) {
+  .departureData, .timeDeparture {
+    display: flex;
+    gap: 32px;
+  }
+  .departureData .departureGroup, .departureData .timeGroup, .timeDeparture .departureGroup, .timeDeparture .timeGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+}
 .hero-form__label {
   display: block;
   font-size: 16px;
@@ -35,6 +47,11 @@
   border-radius: 10px;
   height: 34px;
   padding: 3px 8px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .trip-type {
+    padding: 3px 24px;
+  }
 }
 .trip-type label {
   font-size: 12px;
@@ -78,6 +95,11 @@
   background-image: url("../../img/calendar.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .calendar-input-wrapper::before {
+    top: 33.5px;
+  }
 }
 .calendar-input-wrapper input {
   padding-left: 52px;
