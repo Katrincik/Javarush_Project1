@@ -1,3 +1,5 @@
+@import '../variables/variables'
+
 .statistics
   background: #0578FF
 
@@ -14,16 +16,42 @@
     // width: calc(50% - 60px)
     text-align: center
     color: #fff
-
     margin-bottom: 30px
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      &
+        margin-bottom: 0
+        width: 100%
+        flex: 1 1 calc(50% - 20px)
 
     h3
       font-size: 40px
       font-weight: 700
       margin-top: 0
       margin-bottom: 0
+      color: white
+
+      @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        &
+          font-size: 50px
+
     p
       font-size: 16px
       font-weight: 500
       margin-top: 0
       margin-bottom: 0
+      color: white
+
+      @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        &
+          font-size: 20px
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max)
+  .statistics-container
+    display: flex
+    flex-wrap: wrap
+    padding: 64px 131px
+    gap: 40px
+    justify-content: space-between
+
+
