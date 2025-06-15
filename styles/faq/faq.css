@@ -1,7 +1,9 @@
-.FAQs {
-  padding: 64px 0;
+.FAQs .container {
+  padding: 128px 32px;
 }
 .FAQs h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
   font-size: 64px;
 }
 .FAQs .faq-header {
