@@ -1,0 +1,59 @@
+.contacts {
+  background-color: #0578FF;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 97px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    padding-right: 152px;
+    padding-left: 152px;
+    margin-top: 121px;
+  }
+}
+.contacts .container {
+  background-color: white;
+  border-radius: 10px;
+  transform: translateY(-97px);
+  border: rgba(32, 32, 32, 0.5019607843) solid 1px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contacts .container {
+    transform: translateY(-121px);
+    padding: 0;
+  }
+}
+.contacts .container .contactsGroup {
+  padding: 60px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contacts .container h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contacts .container h1 {
+    font-size: 64px;
+  }
+}
+.contacts .container h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contacts .container h2 {
+    font-size: 28px;
+  }
+}
+.contacts .container h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/*# sourceMappingURL=contacts.css.map */

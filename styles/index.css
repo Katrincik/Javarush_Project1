@@ -5,6 +5,7 @@
 @import url(statistics/statistics.css);
 @import url(gallery/gallery.css);
 @import url(download-now/download-now.css);
+@import url(contacts/contacts.css);
 @import url(faq/faq.css);
 * {
   box-sizing: border-box;

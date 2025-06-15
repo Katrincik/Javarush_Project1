@@ -1,0 +1,51 @@
+@import '../variables/variables'
+
+.contacts
+  background-color: #0578FF
+  padding-right: 20px
+  padding-left: 20px
+  margin-top: 97px
+
+  @media (min-width: $tablet-min) and (max-width: $tablet-max)
+    padding-right: 152px
+    padding-left: 152px
+    margin-top: 121px
+
+  .container
+    background-color: white
+    border-radius: 10px
+    transform: translateY(-97px)
+    border: #20202080 solid 1px
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      transform: translateY(-121px)
+      padding: 0
+
+
+    .contactsGroup
+      padding: 60px 0
+      text-align: center
+      display: flex
+      flex-direction: column
+      gap: 30px
+
+    h1
+      font-size: 36px
+      font-weight: 700
+      margin: 0
+
+      @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        font-size: 64px
+
+    h2
+      font-size: 20px
+      font-weight: 400
+      margin: 0
+
+      @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        font-size: 28px
+
+    h3
+      font-size: 18px
+      font-weight: 400
+      margin: 0
