@@ -1,13 +1,48 @@
+@import '../variables/variables'
+
 .gallery
-  padding: 64px 0
+  padding: 128px 0
+
+  @media (min-width: $tablet-min) and (max-width: $tablet-max)
+    &
+      .container
+        padding-right: 32px
+        padding-top: 0
+        padding-bottom: 0
 
   h2 
     font-size: 32px
 
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      margin: 0 0 24px 0
+
 .gallery-wrapper
   display: grid
   gap: 12px
+
+  @media (min-width: $tablet-min) and (max-width: $tablet-max)
+    gap: 24px
+
   div
     img
       display: block
       width: 100%
+
+  .imageGroup
+    display: block
+    gap: 12px
+    align-items: stretch
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      display: flex
+      gap: 24px
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max)
+  .gallery__elem_3, .gallery__elem_4
+    flex: 1
+    img
+      height: 425px
+      object-fit: cover
+      border-radius: 10px
+
+

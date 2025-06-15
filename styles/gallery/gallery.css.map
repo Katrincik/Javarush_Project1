@@ -1,1 +1,1 @@
-{"version":3,"sources":["gallery.sass","gallery.css"],"names":[],"mappings":"AAAA;EACE,eAAA;ACCF;ADCE;EACE,eAAA;ACCJ;;ADCA;EACE,aAAA;EACA,SAAA;ACEF;ADAI;EACE,cAAA;EACA,WAAA;ACEN","file":"gallery.css"}
+{"version":3,"sourceRoot":"","sources":["gallery.sass"],"names":[],"mappings":"AAEA;EACE;;AAEA;EAEI;IACE;IACA;IACA;;;AAEN;EACE;;AAEA;EAHF;IAII;;;;AAEN;EACE;EACA;;AAEA;EAJF;IAKI;;;AAGA;EACE;EACA;;AAEJ;EACE;EACA;EACA;;AAEA;EALF;IAMI;IACA;;;;AAEN;EACE;IACE;;EACA;IACE;IACA;IACA","file":"gallery.css"}
