@@ -1,28 +1,46 @@
 .download-now {
-  padding: 32px 0;
+  padding: 128px 0;
   background-color: #FFC501;
 }
 .download-now h2 {
   font-size: 32px;
   max-width: 290px;
-  margin: auto;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 0 0 32px 0;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .download-now h2 {
+    max-width: 100%;
+    font-size: 40px;
+  }
 }
 
 .links-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 .links-wrapper a {
   height: 50px;
   display: block;
-  margin: auto;
 }
 .links-wrapper a img {
   height: 50px;
+}
+.links-wrapper .linksGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 49px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .links-wrapper .linksGroup {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=download-now.css.map */

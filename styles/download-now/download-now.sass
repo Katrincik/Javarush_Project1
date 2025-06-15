@@ -1,26 +1,42 @@
+@import '../variables/variables'
+
 .download-now
-  padding: 32px 0
+  padding: 128px 0
   background-color: #FFC501
   h2
     font-size: 32px
     max-width: 290px
-    margin: auto
     text-align: center
-    margin-bottom: 30px
+    margin: 0 0 32px 0
 
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      max-width: 100%
+      font-size: 40px
 
 .links-wrapper
   display: flex
   flex-direction: column
   justify-content: center
+  align-items: center
   gap: 30px
 
   a
     height: 50px
     display: block
-    margin: auto
-  a img 
+
+  a img
     height: 50px
+
+  .linksGroup
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 49px
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      flex-direction: row
+      justify-content: center
 
 // .links-wrapper
 //   .google-play
@@ -37,3 +53,4 @@
 //     img
 //       width: 148px
 //       height: 50px
+
