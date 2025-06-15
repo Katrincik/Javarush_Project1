@@ -1,12 +1,6 @@
 .statistics {
   background: #0578FF;
 }
-.statistics-container.container {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 35.5px;
-  padding-bottom: 35.5px;
-}
 .statistics .cell {
   width: 50%;
   text-align: center;
@@ -45,13 +39,16 @@
   }
 }
 
+.statistics-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+  justify-content: space-between;
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .statistics-container {
-    display: flex;
-    flex-wrap: wrap;
     padding: 64px 131px;
     gap: 40px;
-    justify-content: space-between;
   }
 }
 

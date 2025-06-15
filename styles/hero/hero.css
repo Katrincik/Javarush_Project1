@@ -1,3 +1,19 @@
+.hero {
+  padding-bottom: 128px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    padding-bottom: 0;
+  }
+}
+.hero .container {
+  padding-top: 24px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero .container {
+    padding-top: 64px;
+  }
+}
 .hero h1 {
   font-size: 32px;
   font-weight: 700;
@@ -15,6 +31,14 @@
   color: #202020;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+.hero p .lineBreak {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero p .lineBreak {
+    display: inline;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero p {

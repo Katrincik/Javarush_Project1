@@ -4,12 +4,12 @@
   background: #0578FF
 
   &-container.container
-    display: flex
-    flex-wrap: wrap
-    // justify-content: center
-    // gap: 30px
-    padding-top: 35.5px
-    padding-bottom: 35.5px
+    //display: flex
+    //flex-wrap: wrap
+    //// justify-content: center
+    //// gap: 30px
+    //padding-top: 35.5px
+    //padding-bottom: 35.5px
 
   .cell
     width: 50%
@@ -46,12 +46,14 @@
         &
           font-size: 20px
 
-@media (min-width: $tablet-min) and (max-width: $tablet-max)
-  .statistics-container
-    display: flex
-    flex-wrap: wrap
+.statistics-container
+  display: flex
+  flex-wrap: wrap
+  padding: 30px 20px
+  justify-content: space-between
+
+  @media (min-width: $tablet-min) and (max-width: $tablet-max)
     padding: 64px 131px
     gap: 40px
-    justify-content: space-between
 
 

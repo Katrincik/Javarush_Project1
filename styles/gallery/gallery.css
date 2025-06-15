@@ -1,5 +1,10 @@
 .gallery {
-  padding: 128px 0;
+  padding: 64px 0;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .gallery {
+    padding: 128px 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .gallery .container {
@@ -10,10 +15,11 @@
 }
 .gallery h2 {
   font-size: 32px;
+  margin: 0 0 24px 0;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .gallery h2 {
-    margin: 0 0 24px 0;
+    font-size: 64px;
   }
 }
 
@@ -31,7 +37,7 @@
   width: 100%;
 }
 .gallery-wrapper .imageGroup {
-  display: block;
+  display: grid;
   gap: 12px;
   align-items: stretch;
 }

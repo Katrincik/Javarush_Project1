@@ -1,7 +1,10 @@
 @import '../variables/variables'
 
 .gallery
-  padding: 128px 0
+  padding: 64px 0
+
+  @media (min-width: $tablet-min) and (max-width: $tablet-max)
+    padding: 128px 0
 
   @media (min-width: $tablet-min) and (max-width: $tablet-max)
     &
@@ -12,9 +15,10 @@
 
   h2 
     font-size: 32px
+    margin: 0 0 24px 0
 
     @media (min-width: $tablet-min) and (max-width: $tablet-max)
-      margin: 0 0 24px 0
+      font-size: 64px
 
 .gallery-wrapper
   display: grid
@@ -29,7 +33,7 @@
       width: 100%
 
   .imageGroup
-    display: block
+    display: grid
     gap: 12px
     align-items: stretch
 

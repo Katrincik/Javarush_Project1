@@ -2,12 +2,19 @@
 
 .FAQs
   .container
-    padding: 128px 32px
+    padding: 64px 20px
+
+  @media (min-width: $tablet-min) and (max-width: $tablet-max)
+    .container
+      padding: 128px 32px
 
   h2
     margin-top: 0
-    margin-bottom: 40px
+    margin-bottom: 32px
     font-size: 64px
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      margin-bottom: 40px
 
   .faq-header
     display: flex
