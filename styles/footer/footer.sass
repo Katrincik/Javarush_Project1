@@ -4,6 +4,9 @@
   background-color: #0578FF
   padding: 64px 20px
 
+  @media (min-width: $tablet-min) and (max-width: $tablet-max)
+    padding: 64px 32px
+
   .container
     padding: 0
 
@@ -27,6 +30,16 @@
       flex-wrap: wrap
       gap: 24px
 
+      @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        padding-right: 64px
+        gap: 32px
+
+      .about, .community, .socials
+        min-width: 140px
+
+        @media (min-width: $tablet-min) and (max-width: $tablet-max)
+          min-width: 192px
+
       .aboutGroup, .communityGroup, .socialsGroup
         display: flex
         justify-content: space-between
@@ -40,6 +53,12 @@
     color: white
     font-weight: 600
     font-size: 16px
+
+    .lineBreak
+      display: none
+
+      @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        display: inline
 
 
 h4

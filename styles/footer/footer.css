@@ -2,6 +2,11 @@
   background-color: #0578FF;
   padding: 64px 20px;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    padding: 64px 32px;
+  }
+}
 .footer .container {
   padding: 0;
 }
@@ -25,6 +30,20 @@
   flex-wrap: wrap;
   gap: 24px;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer .container .usefulData {
+    padding-right: 64px;
+    gap: 32px;
+  }
+}
+.footer .container .usefulData .about, .footer .container .usefulData .community, .footer .container .usefulData .socials {
+  min-width: 140px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer .container .usefulData .about, .footer .container .usefulData .community, .footer .container .usefulData .socials {
+    min-width: 192px;
+  }
+}
 .footer .container .usefulData .aboutGroup, .footer .container .usefulData .communityGroup, .footer .container .usefulData .socialsGroup {
   display: flex;
   justify-content: space-between;
@@ -38,6 +57,14 @@
   color: white;
   font-weight: 600;
   font-size: 16px;
+}
+.footer h3 .lineBreak {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer h3 .lineBreak {
+    display: inline;
+  }
 }
 
 h4 {
