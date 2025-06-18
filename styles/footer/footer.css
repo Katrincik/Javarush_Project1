@@ -1,0 +1,60 @@
+.footer {
+  background-color: #0578FF;
+  padding: 64px 20px;
+}
+.footer .container {
+  padding: 0;
+}
+.footer .container .leftGroup {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 40px;
+}
+.footer .container .leftGroup h1 {
+  font-size: 34px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+}
+.footer .container .leftGroup img {
+  filter: invert(1);
+}
+.footer .container .usefulData {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.footer .container .usefulData .aboutGroup, .footer .container .usefulData .communityGroup, .footer .container .usefulData .socialsGroup {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer h3 {
+  margin: 0;
+  padding-top: 40px;
+  margin-right: -6px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+/*# sourceMappingURL=footer.css.map */

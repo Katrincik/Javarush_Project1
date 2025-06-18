@@ -23,6 +23,7 @@
   height: 56px;
 }
 .FAQs .faq-header h4 {
+  color: black;
   font-size: 18px;
   margin-bottom: 0;
   margin-top: 0;
@@ -40,6 +41,7 @@
   display: block;
 }
 .FAQs .faq-body p {
+  color: black;
   font-size: 16px;
   line-height: 140%;
   margin-top: 0;
