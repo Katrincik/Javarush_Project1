@@ -6,11 +6,21 @@
     padding: 128px 0;
   }
 }
+@media (min-width: 1200px) {
+  .gallery {
+    padding: 128px 0;
+  }
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .gallery .container {
     padding-right: 32px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery .container {
+    padding: 0 64px;
   }
 }
 .gallery h2 {
@@ -20,6 +30,12 @@
 @media (min-width: 768px) and (max-width: 1199px) {
   .gallery h2 {
     font-size: 64px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery h2 {
+    font-size: 64px;
+    font-weight: 700;
   }
 }
 
@@ -32,28 +48,141 @@
     gap: 24px;
   }
 }
+.gallery-wrapper .imageSecondGroup {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .gallery-wrapper .imageSecondGroup {
+    gap: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-wrapper .imageSecondGroup {
+    gap: 24px;
+  }
+}
+.gallery-wrapper .groupOfThree {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .gallery-wrapper .groupOfThree {
+    gap: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-wrapper .groupOfThree {
+    gap: 24px;
+  }
+}
+.gallery-wrapper .groupOfThree .imageGroup {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .gallery-wrapper .groupOfThree .imageGroup {
+    gap: 24px;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-wrapper .groupOfThree .imageGroup {
+    gap: 24px;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 32px;
+    align-items: stretch;
+  }
+}
 .gallery-wrapper div img {
   display: block;
   width: 100%;
 }
-.gallery-wrapper .imageGroup {
-  display: grid;
-  gap: 12px;
-  align-items: stretch;
+@media (min-width: 1200px) {
+  .gallery-wrapper div img .gallery__elem_5 {
+    height: 264px;
+  }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
-  .gallery-wrapper .imageGroup {
+@media (min-width: 1200px) {
+  .gallery-wrapper div img .gallery__elem_1, .gallery-wrapper div img .gallery__elem_2 {
+    width: 528px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery__elem_5 img {
+    height: 264px;
+  }
+  .imageSecondGroup {
+    height: 777px;
+    width: 528px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .groupOfThree {
+    height: 777px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .groupOfThree .imageGroup {
+    display: grid;
+    gap: 12px;
+    align-items: stretch;
+  }
+}
+@media (min-width: 1200px) and (min-width: 768px) and (max-width: 1199px) {
+  .groupOfThree .imageGroup {
     display: flex;
     gap: 24px;
   }
 }
-
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .groupOfThree .imageGroup {
+    display: flex;
+    gap: 32px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .gallery__elem_3, .gallery__elem_4 {
     flex: 1;
   }
   .gallery__elem_3 img, .gallery__elem_4 img {
     height: 425px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery__elem_3, .gallery__elem_4 {
+    flex: 1;
+    object-fit: cover;
+  }
+  .gallery__elem_3 img, .gallery__elem_4 img {
+    height: 489px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery__elem_1, .gallery__elem_2 {
+    flex: 1;
+    object-fit: cover;
+  }
+  .gallery__elem_1 img, .gallery__elem_2 img {
+    height: 376px;
     object-fit: cover;
     border-radius: 10px;
   }

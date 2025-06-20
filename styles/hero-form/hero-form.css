@@ -10,6 +10,18 @@
     flex: 1;
   }
 }
+@media (min-width: 1200px) {
+  .departureData, .timeDeparture {
+    display: flex;
+    gap: 32px;
+  }
+  .departureData .departureGroup, .departureData .timeGroup, .timeDeparture .departureGroup, .timeDeparture .timeGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+}
 .hero-form__label {
   display: block;
   font-size: 16px;
@@ -49,6 +61,11 @@
   padding: 3px 8px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .trip-type {
+    padding: 3px 24px;
+  }
+}
+@media (min-width: 1200px) {
   .trip-type {
     padding: 3px 24px;
   }
@@ -97,6 +114,11 @@
   background-position: center;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .calendar-input-wrapper::before {
+    top: 33.5px;
+  }
+}
+@media (min-width: 1200px) {
   .calendar-input-wrapper::before {
     top: 33.5px;
   }

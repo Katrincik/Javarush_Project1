@@ -87,5 +87,11 @@ ARRAY_OF_ELEMENTS.forEach((item, index, array) => {
 	const faqElement = generateFAQElement(item.title, item.content);
 	faqContent.appendChild(faqElement);
 
+	if (index < array.length - 1) {
+		const hr = document.createElement("hr");
+		hr.classList.add("hr");
+		faqContent.appendChild(hr);
+	}
+
 	if (index === array.length - 1) initClickListeners();
 });

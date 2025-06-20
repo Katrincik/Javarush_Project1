@@ -24,6 +24,17 @@
 					<button id="burger-opener" class="header__burger-button">
 						<img id="burger-icon" src="img/burger-open.png" />
 					</button>
+
+					<div class="navbar">
+						<nav class="navbarLinks">
+							<ul class="linkLists">
+								<li><a href="#mobile-app" class="navLink">Mobile App</a></li>
+								<li><a href="#faq" class="navLink">FAQs</a></li>
+								<li><a href="#contacts" class="navLink">Contact</a></li>
+								<li><a href="#sign-up" class="navLink">Sign Up</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</header>
 
@@ -33,7 +44,7 @@
 						<ul class="burger__list">
 							<li><a href="#mobile-app" class="burger__link">Mobile App</a></li>
 							<li><a href="#faq" class="burger__link">FAQs</a></li>
-							<li><a href="#contact" class="burger__link">Contact</a></li>
+							<li><a href="#contacts" class="burger__link">Contact</a></li>
 							<li><a href="#sign-up" class="burger__link">Sign Up</a></li>
 						</ul>
 					</nav>
@@ -41,94 +52,99 @@
 			</div>
 
 			<section class="hero">
-				<div class="container">
-					<h1>Skip The Climbing, Catch The Bus</h1>
+				<div class="heroGroup">
+					<div class="container">
+						<h1>Skip The Climbing, Catch The Bus</h1>
 
-					<p>
-						We sell tickets to the best seats in the house – houses on wheels,
-						that is! <br class="lineBreak"> Get ready for jaw-dropping views without breaking a sweat.
-					</p>
+						<p>
+							We sell tickets to the best seats in the house – houses on wheels,
+							that is! <br class="lineBreak"> Get ready for jaw-dropping views without breaking a sweat.
+						</p>
 
-					<form class="hero-form">
-						<div class="trip-type">
-							<div class="radio-wrapper">
-								<input
-									id="round-trip"
-									type="radio"
-									name="trip-type"
-									value="round-trip"
-								/>
-								<label for="round-trip">Round trip</label>
+						<form class="hero-form">
+							<div class="trip-type">
+								<div class="radio-wrapper">
+									<input
+										id="round-trip"
+										type="radio"
+										name="trip-type"
+										value="round-trip"
+									/>
+									<label for="round-trip">Round trip</label>
+								</div>
+
+								<div class="radio-wrapper">
+									<input
+										id="one-way-trip"
+										type="radio"
+										name="trip-type"
+										value="one-way-trip"
+									/>
+									<label for="one-way-trip">One way</label>
+								</div>
+
+								<div class="counter">
+									<img src="img/person-solid.svg" />
+									<button id="trip-minus">-</button>
+									<span id="trip-counter">1</span>
+									<button id="trip-plus">+</button>
+								</div>
 							</div>
 
-							<div class="radio-wrapper">
-								<input
-									id="one-way-trip"
-									type="radio"
-									name="trip-type"
-									value="one-way-trip"
-								/>
-								<label for="one-way-trip">One way</label>
-							</div>
-
-							<div class="counter">
-								<img src="img/person-solid.svg" />
-								<button id="trip-minus">-</button>
-								<span id="trip-counter">1</span>
-								<button id="trip-plus">+</button>
-							</div>
-						</div>
-
-						<div class="departureData">
-							<div class="departureGroup">
-								<label for="departure" class="hero-form__label">Departure</label>
-								<input
-									id="departure"
-									class="hero-form__input"
-									placeholder="Your City/Station"
-								/>
-							</div>
-
-							<div class="departureGroup">
-								<label for="departure" class="hero-form__label">Arrival</label>
-								<input
-									id="departure"
-									class="hero-form__input"
-									placeholder="Where to?"
-								/>
-							</div>
-						</div>
-
-						<label for="departure" class="hero-form__label"
-						>Pick your lucky day</label
-						>
-
-						<div class="timeDeparture">
-							<div class="timeGroup">
-								<div class="calendar-input-wrapper">
+							<div class="departureData">
+								<div class="departureGroup">
+									<label for="departure" class="hero-form__label">Departure</label>
 									<input
 										id="departure"
-										type="date"
 										class="hero-form__input"
-										placeholder="Depart"
+										placeholder="Your City/Station"
+									/>
+								</div>
+
+								<div class="departureGroup">
+									<label for="departure" class="hero-form__label">Arrival</label>
+									<input
+										id="departure"
+										class="hero-form__input"
+										placeholder="Where to?"
 									/>
 								</div>
 							</div>
 
-							<div class="timeGroup">
-								<div class="calendar-input-wrapper">
-									<input
-										id="departure"
-										type="date"
-										class="hero-form__input"
-										placeholder="Return"
-									/>
+							<label for="departure" class="hero-form__label"
+							>Pick your lucky day</label
+							>
+
+							<div class="timeDeparture">
+								<div class="timeGroup">
+									<div class="calendar-input-wrapper">
+										<input
+											id="departure"
+											type="date"
+											class="hero-form__input"
+											placeholder="Depart"
+										/>
+									</div>
+								</div>
+
+								<div class="timeGroup">
+									<div class="calendar-input-wrapper">
+										<input
+											id="departure"
+											type="date"
+											class="hero-form__input"
+											placeholder="Return"
+										/>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<button class="submit">Find My Alpine Ride</button>
-					</form>
+							<button class="submit">Find My Alpine Ride</button>
+						</form>
+					</div>
+					<div class="heroImage">
+						<img id="heropng" src="img/hero.png" />
+					</div>
 				</div>
 			</section>
 
@@ -161,22 +177,26 @@
 					<h2>Glimpses of Glory</h2>
 
 					<div class="gallery-wrapper">
-						<div class="gallery__elem_1">
-							<img src="img/img02.png" />
-						</div>
-						<div class="gallery__elem_2">
-							<img src="img/img01.png" />
-						</div>
-						<div class="imageGroup">
-							<div class="gallery__elem_3">
-								<img src="img/img03.png" />
+						<div class="imageSecondGroup">
+							<div class="gallery__elem_1">
+								<img src="img/img02.png" />
 							</div>
-							<div class="gallery__elem_4">
-								<img src="img/img04.png" />
+							<div class="gallery__elem_2">
+								<img src="img/img01.png" />
 							</div>
 						</div>
-						<div class="gallery__elem_5">
-							<img src="img/img05.png" />
+						<div class="groupOfThree">
+							<div class="imageGroup">
+								<div class="gallery__elem_3">
+									<img src="img/img03.png" />
+								</div>
+								<div class="gallery__elem_4">
+									<img src="img/img04.png" />
+								</div>
+							</div>
+							<div class="gallery__elem_5">
+								<img src="img/img05.png" />
+							</div>
 						</div>
 					</div>
 				</div>
@@ -184,7 +204,7 @@
 		</div>
 
 		<section class="download-now">
-			<h2>Free downloads <br> app now!</h2>
+			<h2>Free downloads <br class="lineBreak"> app now!</h2>
 
 			<div class="links-wrapper">
 				<a href="#" class="google-play"
@@ -204,6 +224,7 @@
 				<h2>FAQs.</h2>
 
 				<div id="faq-content" class="faq-content"></div>
+
 			</div>
 		</section>
 

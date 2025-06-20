@@ -11,6 +11,17 @@
       justify-content: space-between
       flex: 1
 
+@media (min-width: $desktop)
+  .departureData, .timeDeparture
+    display: flex
+    gap: 32px
+
+    .departureGroup, .timeGroup
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      flex: 1
+
 .hero-form
   &__label
     display: block
@@ -50,8 +61,10 @@
   padding: 3px 8px
 
   @media (min-width: $tablet-min) and (max-width: $tablet-max)
-    &
-      padding: 3px 24px
+    padding: 3px 24px
+
+  @media (min-width: $desktop)
+    padding: 3px 24px
 
   label
     font-size: 12px
@@ -84,7 +97,6 @@
 
 
 .calendar-input-wrapper
-
   position: relative
 
   &::before
@@ -100,9 +112,10 @@
     background-position: center
 
     @media (min-width: $tablet-min) and (max-width: $tablet-max)
-      &
-        top: 33.5px
+      top: 33.5px
 
+    @media (min-width: $desktop)
+      top: 33.5px
 
   input
     padding-left: 52px

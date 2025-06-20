@@ -6,6 +6,11 @@
     padding: 128px 32px;
   }
 }
+@media (min-width: 1200px) {
+  .FAQs .container {
+    padding: 128px 177px;
+  }
+}
 .FAQs h2 {
   margin-top: 0;
   margin-bottom: 32px;
@@ -21,12 +26,14 @@
   justify-content: space-between;
   align-items: center;
   height: 56px;
+  padding: 16px 0;
 }
 .FAQs .faq-header h4 {
   color: black;
   font-size: 18px;
   margin-bottom: 0;
   margin-top: 0;
+  padding: 0;
 }
 .FAQs .faq-header img {
   display: block;
@@ -46,6 +53,7 @@
   line-height: 140%;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 16px 0;
 }
 .FAQs .item-opened {
   transform: rotate(45deg);

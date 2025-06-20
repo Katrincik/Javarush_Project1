@@ -7,8 +7,16 @@
   @media (min-width: $tablet-min) and (max-width: $tablet-max)
     padding: 64px 32px
 
+  @media (min-width: $desktop)
+    padding: 64px 64px 76px 64px
+
   .container
     padding: 0
+
+    @media (min-width: $desktop)
+      display: flex
+      justify-content: space-between
+      align-items: start
 
     .leftGroup
       display: flex
@@ -34,10 +42,18 @@
         padding-right: 64px
         gap: 32px
 
+      @media (min-width: $desktop)
+        gap: 32px
+        justify-content: flex-end
+        flex-wrap: nowrap
+
       .about, .community, .socials
         min-width: 140px
 
         @media (min-width: $tablet-min) and (max-width: $tablet-max)
+          min-width: 192px
+
+        @media (min-width: $desktop)
           min-width: 192px
 
       .aboutGroup, .communityGroup, .socialsGroup
@@ -47,9 +63,8 @@
         gap: 30px
 
   h3
-    margin: 0
+    margin: 0 -6px 0 0
     padding-top: 40px
-    margin-right: -6px
     color: white
     font-weight: 600
     font-size: 16px
@@ -58,6 +73,9 @@
       display: none
 
       @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        display: inline
+
+      @media (min-width: $desktop)
         display: inline
 
 

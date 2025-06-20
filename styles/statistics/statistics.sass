@@ -12,17 +12,19 @@
     //padding-bottom: 35.5px
 
   .cell
-    width: 50%
+    width: fit-content
     // width: calc(50% - 60px)
     text-align: center
     color: #fff
     margin-bottom: 30px
 
     @media (min-width: $tablet-min) and (max-width: $tablet-max)
-      &
-        margin-bottom: 0
-        width: 100%
-        flex: 1 1 calc(50% - 20px)
+      margin-bottom: 0
+      width: 100%
+      flex: 1 1 calc(50% - 20px)
+
+    @media (min-width: $desktop)
+      margin-bottom: 0
 
     h3
       font-size: 40px
@@ -41,6 +43,7 @@
       margin-top: 0
       margin-bottom: 0
       color: white
+      justify-content: center
 
       @media (min-width: $tablet-min) and (max-width: $tablet-max)
         &
@@ -55,5 +58,9 @@
   @media (min-width: $tablet-min) and (max-width: $tablet-max)
     padding: 64px 131px
     gap: 40px
+
+  @media (min-width: $desktop)
+    flex-wrap: nowrap
+    padding: 64px 59.5px
 
 

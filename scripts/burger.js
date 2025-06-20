@@ -11,12 +11,16 @@ function openBurgerMenu() {
 	burgerIcon.setAttribute("src", "img/burger-close.png");
 	burger.classList.remove("burger__closed");
 	burger.classList.add("burger__opened");
+
+	document.body.classList.add("no-scroll", "burger-opened");
 }
 
 function closeBurgerMenu() {
 	burgerIcon.setAttribute("src", "img/burger-open.png");
 	burger.classList.add("burger__closed");
 	burger.classList.remove("burger__opened");
+
+	document.body.classList.remove("no-scroll", "burger-opened");
 }
 
 burgerOpenerButton.addEventListener("click", function (event) {

@@ -6,12 +6,18 @@
   @media (min-width: $tablet-min) and (max-width: $tablet-max)
     padding: 128px 0
 
+  @media (min-width: $desktop)
+    padding: 128px 0
+
   @media (min-width: $tablet-min) and (max-width: $tablet-max)
-    &
-      .container
-        padding-right: 32px
-        padding-top: 0
-        padding-bottom: 0
+    .container
+      padding-right: 32px
+      padding-top: 0
+      padding-bottom: 0
+
+  @media (min-width: $desktop)
+    .container
+      padding: 0 64px
 
   h2 
     font-size: 32px
@@ -20,6 +26,10 @@
     @media (min-width: $tablet-min) and (max-width: $tablet-max)
       font-size: 64px
 
+    @media (min-width: $desktop)
+      font-size: 64px
+      font-weight: 700
+
 .gallery-wrapper
   display: grid
   gap: 12px
@@ -27,19 +37,91 @@
   @media (min-width: $tablet-min) and (max-width: $tablet-max)
     gap: 24px
 
+  .imageSecondGroup
+    gap: 12px
+    display: flex
+    flex-direction: column
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      gap: 24px
+
+    @media (min-width: $desktop)
+      gap: 24px
+
+  .groupOfThree
+    gap: 12px
+    display: flex
+    flex-direction: column
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      gap: 24px
+
+    @media (min-width: $desktop)
+      gap: 24px
+
+    .imageGroup
+      gap: 12px
+      display: flex
+      flex-direction: column
+
+      @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        gap: 24px
+        flex-direction: row
+
+      @media (min-width: $desktop)
+        gap: 24px
+        flex-direction: row
+
+  @media (min-width: $desktop)
+    display: flex
+    flex-wrap: nowrap
+    gap: 32px
+    align-items: stretch
+
   div
     img
       display: block
       width: 100%
 
-  .imageGroup
-    display: grid
-    gap: 12px
-    align-items: stretch
+      @media (min-width: $desktop)
+        .gallery__elem_5
+          height: 264px
 
-    @media (min-width: $tablet-min) and (max-width: $tablet-max)
-      display: flex
-      gap: 24px
+      @media (min-width: $desktop)
+        .gallery__elem_1, .gallery__elem_2
+          width: 528px
+
+@media (min-width: $desktop)
+  .gallery__elem_5 img
+    height: 264px
+
+  .imageSecondGroup
+    height: 777px
+    width: 528px
+    display: flex
+    flex: 1
+    flex-direction: column
+    gap: 24px
+
+  .groupOfThree
+    height: 777px
+    display: flex
+    flex: 1
+    flex-direction: column
+    gap: 24px
+
+    .imageGroup
+      display: grid
+      gap: 12px
+      align-items: stretch
+
+      @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        display: flex
+        gap: 24px
+
+      @media (min-width: $desktop)
+        display: flex
+        gap: 32px
 
 @media (min-width: $tablet-min) and (max-width: $tablet-max)
   .gallery__elem_3, .gallery__elem_4
@@ -48,5 +130,24 @@
       height: 425px
       object-fit: cover
       border-radius: 10px
+
+@media (min-width: $desktop)
+  .gallery__elem_3, .gallery__elem_4
+    flex: 1
+    object-fit: cover
+    img
+      height: 489px
+      object-fit: cover
+      border-radius: 10px
+
+@media (min-width: $desktop)
+  .gallery__elem_1, .gallery__elem_2
+    flex: 1
+    object-fit: cover
+    img
+      height: 376px
+      object-fit: cover
+      border-radius: 10px
+
 
 

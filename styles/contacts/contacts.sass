@@ -11,6 +11,11 @@
     padding-left: 152px
     margin-top: 121px
 
+  @media (min-width: $desktop)
+    padding-right: 400px
+    padding-left: 400px
+    margin-top: 121px
+
   .container
     background-color: white
     border-radius: 10px
@@ -21,6 +26,9 @@
       transform: translateY(-121px)
       padding: 0
 
+    @media (min-width: $desktop)
+      transform: translateY(-121px)
+      padding: 0
 
     .contactsGroup
       padding: 60px 0
@@ -37,12 +45,18 @@
       @media (min-width: $tablet-min) and (max-width: $tablet-max)
         font-size: 64px
 
+      @media (min-width: $desktop)
+        font-size: 64px
+
     h2
       font-size: 20px
       font-weight: 400
       margin: 0
 
       @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        font-size: 28px
+
+      @media (min-width: $desktop)
         font-size: 28px
 
     h3

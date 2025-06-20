@@ -19,17 +19,19 @@ body
   margin: 0
   display: block
 
+body.no-scroll
+  overflow: hidden
+
+body.burger-opened
+  .calendar-input-wrapper
+    display: none
+
 .container
   width: 100%
   padding: 0 20px
 
   @media (min-width: $tablet-min) and (max-width: $tablet-max)
-    &
-      padding: 64px 96px 128px 32px
-
-  //@media (max-width: $mobile)
-
-  //@media (min-width: $desktop)
+    padding: 64px 96px 128px 32px
 
 .three-first-sections
   background: linear-gradient(#F5F5F5, #DDECFF, #F5F5F5)

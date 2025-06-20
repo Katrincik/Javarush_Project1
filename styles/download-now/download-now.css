@@ -4,7 +4,12 @@
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .download-now {
-    padding-top: 128px;
+    padding: 128px 121px;
+  }
+}
+@media (min-width: 1200px) {
+  .download-now {
+    padding: 116px 289px 128px 289px;
   }
 }
 .download-now h2 {
@@ -18,12 +23,24 @@
     font-size: 40px;
   }
 }
+@media (min-width: 1200px) {
+  .download-now h2 {
+    margin-bottom: 60px;
+    font-size: 62px;
+    font-weight: 700;
+  }
+}
 .download-now h2 .lineBreak {
-  display: none;
+  display: inline;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .download-now h2 .lineBreak {
-    display: inline;
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .download-now h2 .lineBreak {
+    display: none;
   }
 }
 
@@ -34,12 +51,51 @@
   align-items: center;
   gap: 30px;
 }
+.links-wrapper .google-play a {
+  width: 168px;
+}
+@media (min-width: 1200px) {
+  .links-wrapper .google-play a {
+    width: 213px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .links-wrapper .google-play a {
+    width: 213px;
+  }
+}
+@media (min-width: 1200px) {
+  .links-wrapper {
+    flex-direction: row;
+    gap: 125.3px;
+  }
+}
 .links-wrapper a {
   height: 50px;
   display: block;
 }
+@media (min-width: 1200px) {
+  .links-wrapper a {
+    height: 65px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .links-wrapper a {
+    height: 65px;
+  }
+}
 .links-wrapper a img {
   height: 50px;
+}
+@media (min-width: 1200px) {
+  .links-wrapper a img {
+    height: 65px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .links-wrapper a img {
+    height: 65px;
+  }
 }
 .links-wrapper .linksGroup {
   display: flex;
@@ -52,6 +108,38 @@
   .links-wrapper .linksGroup {
     flex-direction: row;
     gap: 49px;
+  }
+}
+@media (min-width: 1200px) {
+  .links-wrapper .linksGroup {
+    flex-direction: row;
+    gap: 125.3px;
+  }
+}
+.links-wrapper .linksGroup .app-gallery img {
+  width: 165px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .links-wrapper .linksGroup .app-gallery img {
+    width: 210px;
+  }
+}
+@media (min-width: 1200px) {
+  .links-wrapper .linksGroup .app-gallery img {
+    width: 210px;
+  }
+}
+.links-wrapper .linksGroup .app-store img {
+  width: 148px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .links-wrapper .linksGroup .app-store img {
+    width: 188px;
+  }
+}
+@media (min-width: 1200px) {
+  .links-wrapper .linksGroup .app-store img {
+    width: 188px;
   }
 }
 

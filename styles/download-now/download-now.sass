@@ -5,7 +5,10 @@
   background-color: #FFC501
 
   @media (min-width: $tablet-min) and (max-width: $tablet-max)
-    padding-top: 128px
+    padding: 128px 121px
+
+  @media (min-width: $desktop)
+    padding: 116px 289px 128px 289px
 
   h2
     font-size: 32px
@@ -18,11 +21,19 @@
       margin-bottom: 32px
       font-size: 40px
 
+    @media (min-width: $desktop)
+      margin-bottom: 60px
+      font-size: 62px
+      font-weight: 700
+
     .lineBreak
-      display: none
+      display: inline
 
       @media (min-width: $tablet-min) and (max-width: $tablet-max)
-        display: inline
+        display: none
+
+      @media (min-width: $desktop)
+        display: none
 
 .links-wrapper
   display: flex
@@ -31,12 +42,37 @@
   align-items: center
   gap: 30px
 
+  .google-play a
+    width: 168px
+
+    @media (min-width: $desktop)
+      width: 213px
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      width: 213px
+
+  @media (min-width: $desktop)
+    flex-direction: row
+    gap: 125.3px
+
   a
     height: 50px
     display: block
 
+    @media (min-width: $desktop)
+      height: 65px
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      height: 65px
+
   a img
     height: 50px
+
+    @media (min-width: $desktop)
+      height: 65px
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
+      height: 65px
 
   .linksGroup
     display: flex
@@ -49,6 +85,27 @@
       flex-direction: row
       gap: 49px
 
+    @media (min-width: $desktop)
+      flex-direction: row
+      gap: 125.3px
+
+    .app-gallery img
+      width: 165px
+      @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        width: 210px
+
+      @media (min-width: $desktop)
+        width: 210px
+
+    .app-store img
+      width: 148px
+
+      @media (min-width: $tablet-min) and (max-width: $tablet-max)
+        width: 188px
+
+      @media (min-width: $desktop)
+        width: 188px
+
 // .links-wrapper
 //   .google-play
 //     img
@@ -59,7 +116,7 @@
 //     img
 //       width: 165px
 //       height: 50px
-  
+
 //   .app-store
 //     img
 //       width: 148px

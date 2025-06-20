@@ -2,7 +2,7 @@
   background: #0578FF;
 }
 .statistics .cell {
-  width: 50%;
+  width: fit-content;
   text-align: center;
   color: #fff;
   margin-bottom: 30px;
@@ -12,6 +12,11 @@
     margin-bottom: 0;
     width: 100%;
     flex: 1 1 calc(50% - 20px);
+  }
+}
+@media (min-width: 1200px) {
+  .statistics .cell {
+    margin-bottom: 0;
   }
 }
 .statistics .cell h3 {
@@ -32,6 +37,7 @@
   margin-top: 0;
   margin-bottom: 0;
   color: white;
+  justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .statistics .cell p {
@@ -49,6 +55,12 @@
   .statistics-container {
     padding: 64px 131px;
     gap: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .statistics-container {
+    flex-wrap: nowrap;
+    padding: 64px 59.5px;
   }
 }
 

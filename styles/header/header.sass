@@ -10,28 +10,67 @@
       padding: 32.5px 20px
 
       @media (min-width: $tablet-min) and (max-width: $tablet-max)
-        &
-          padding: 32.5px 32px
+        padding: 32.5px 32px
+
+      @media (min-width: $desktop)
+        padding: 32.5px 64px
+
+      .navbar
+
+        .navbarLinks
+
+          .linkLists
+            list-style: none
+            display: flex
+            flex-direction: row
+            gap: 96px
+            margin: 0
+
+            .navLink
+              font-size: 20px
+              font-weight: 400
+              text-decoration: none
+
+          .linkLists li:last-child a
+            font-weight: 600
 
 
   &__burger-button
     background: none
     border: 0
 
+    @media (min-width: $desktop)
+      display: none
+
   .companyName
     display: none
 
     @media (min-width: $tablet-min) and (max-width: $tablet-max)
-      &
-        display: block
-        font-weight: 300
-        padding-left: 15px
-        margin: 0
+      display: block
+      font-weight: 300
+      padding-left: 15px
+      margin: 0
+
+    @media (min-width: $desktop)
+      display: block
+      font-weight: 400
+      font-size: 34px
+      padding-left: 15px
+      margin: 0
 
   .leftGroup
     display: block
 
     @media (min-width: $tablet-min) and (max-width: $tablet-max)
-      &
-        display: flex
-        align-items: center
+      display: flex
+      align-items: center
+
+    @media (min-width: $desktop)
+      display: flex
+      align-items: center
+
+.navbar
+  display: none
+
+  @media (min-width: $desktop)
+    display: contents

@@ -4,9 +4,11 @@
   .container
     padding: 64px 20px
 
-  @media (min-width: $tablet-min) and (max-width: $tablet-max)
-    .container
+    @media (min-width: $tablet-min) and (max-width: $tablet-max)
       padding: 128px 32px
+
+    @media (min-width: $desktop)
+      padding: 128px 177px
 
   h2
     margin-top: 0
@@ -21,12 +23,14 @@
     justify-content: space-between
     align-items: center
     height: 56px
+    padding: 16px 0
 
     h4
       color: black
       font-size: 18px
       margin-bottom: 0
       margin-top: 0
+      padding: 0
 
     img
       display: block
@@ -48,6 +52,7 @@
       line-height: 140%
       margin-top: 0
       margin-bottom: 0
+      padding: 16px 0
 
   .item-opened
     transform: rotate(45deg)
