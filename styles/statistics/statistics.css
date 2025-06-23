@@ -2,7 +2,7 @@
   background: #0578FF;
 }
 .statistics .cell {
-  width: fit-content;
+  width: calc(50% - 40px);
   text-align: center;
   color: #fff;
   margin-bottom: 30px;
